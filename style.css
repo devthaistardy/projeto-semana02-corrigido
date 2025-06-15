@@ -208,7 +208,7 @@ footer p {
 
 /* Área dos Media e dos Keyframes */
 
-@media (width > 600px) {
+@media (width > 425px) {
   /* Alterar o tamanho para 700px no final. */
   nav ul .hide {
     display: block;
