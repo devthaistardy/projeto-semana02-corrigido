@@ -31,6 +31,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 2px 4px 0 rgba(0, 0, 0, 0.2); 
 }
 
 nav ul {
@@ -92,6 +93,58 @@ main .hero {
   animation-name: bounce;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+}
+
+main .about {
+  text-align: center;
+  padding: 0 20px;
+
+}
+
+.about img {
+  width: 300px;
+}
+
+.about p {
+  margin: 10px;
+  text-align: left;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-area {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.service-item {
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  background: var(--light-color);
+  box-shadow: 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.service-item .service-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.service-item ul {
+  list-style: none;
+  text-align: left;
+  padding: 20px;
+}
+
+.service-item li {
+  padding: 5px;
 }
 
 /* Área dos Media e dos Keyframes */
