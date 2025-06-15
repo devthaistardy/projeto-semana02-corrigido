@@ -47,7 +47,7 @@ nav ul a {
   color: var(--light-color);
   padding: 10px;
   border-radius: 8px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 nav ul a:hover {
@@ -58,9 +58,59 @@ nav ul .hide {
   display: none;
 }
 
-@media (width > 700px) {
-  nav ul .hide {
-  display: block;
+main {
+  max-width: 1024px;
+  margin: auto;
+  padding: 20px;
 }
 
+main .hero {
+  text-align: center;
+  margin: 20px 0;
+  padding: 40px 20px;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: var(--light-color);
+}
+.hero h1 {
+  margin-bottom: 20px;
+}
+
+.hero .cta {
+  display: block;
+  max-width: 400px;
+  text-decoration: none;
+  color: var(--light-color);
+  background: var(--secondary-color);
+  border-radius: 8px;
+  margin: 20px auto 0px;
+  padding: 15px;
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+/* Área dos Media e dos Keyframes */
+
+@media (width > 600px) {
+  /* Alterar o tamanho para 700px no final. */
+  nav ul .hide {
+    display: block;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
